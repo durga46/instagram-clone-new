@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="Insta">
+        <header>
+            <div class="logo">
+                <img src="insta.png" alt="**">
+            </div>
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="message.html"><i class="fa-brands fa-facebook-messenger"></i></i></a></li>
+                        <li><a href="post.html"><i class="fa-regular fa-square-plus"></i></i></a></li>
+                        <li><a href="explore.html"><i class="fa-regular fa-compass"></i></a></li>
+                        <li><a href="heart.html"><i class="fa-regular fa-heart"></i></i></a></li>
+                        <li><a href="user.html"><img src="pro.jpg" alt="**"></a></li>
+                    </ul>
+                </nav>
+            
+        </header>
+       
+    </div>
+    
+
+       
+    
+</body>
+</html>
+<html>
+<head>
+  <title>A Simple Popup</title>
+  <style>
+	#overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: #999;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		z-index: 100;
+	}
+
+	#popup {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: #fff;
+		width: 500px;
+		height: 500px;
+		margin-left: -250px; /*Half the value of width to center div*/
+		margin-top: -250px; /*Half the value of height to center div*/
+		z-index: 200;
+	}
+
+	#popupclose {
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.popupcontent {
+		padding: 10px;
+        text-align: center;
+	}
+
+	#button {
+		cursor: pointer;
+	}
+
+    #maincontent{
+        margin-top: 10%;
+        text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+<div id="maincontent">
+    <h1>Create New Post<h2>
+    <button id="button">create</button>
+</div>
+<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+        <h1>Create Post</h1>
+        
+    <button id="button">create</button>
+    </div>
+</div>
+<script type="text/javascript">
+	// Initialize Variables
+	var closePopup = document.getElementById("popupclose");
+	var overlay = document.getElementById("overlay");
+	var popup = document.getElementById("popup");
+	var button = document.getElementById("button");
+	// Close Popup Event
+	closePopup.onclick = function() {
+	  overlay.style.display = 'none';
+	  popup.style.display = 'none';
+	};
+	// Show Overlay and Popup
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}
+</script>
+</body>
+</html>
